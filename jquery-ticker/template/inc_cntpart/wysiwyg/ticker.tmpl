@@ -1,0 +1,69 @@
+    [TITLE]<h3>{TITLE}</h3>[/TITLE]
+    [SUBTITLE]<h4>{SUBTITLE}</h4>[/SUBTITLE]
+    [TEXT]
+    <!-- JS: marquee -->
+    <!-- JS: pause -->
+    <!-- JS: $(function(){
+                var $mwo = $('.marquee-with-options');
+                $('.marquee').marquee();
+                $('.marquee-with-options').marquee({
+                   //speed in milliseconds of the marquee
+                   speed: 9000,
+                   //gap in pixels between the tickers
+                   gap: 200,
+                   //gap in pixels between the tickers
+                   delayBeforeStart: 0,
+                   //'left' or 'right'
+                   direction: 'left',
+                   //true or false - should the marquee be duplicated to show an effect of continues flow
+                   duplicated: true,
+                   //on hover pause the marquee - using jQuery plugin https://github.com/tobia/Pause
+                   pauseOnHover: true
+                });
+
+                //pause and resume links
+                $('.pause').click(function(e){
+                   e.preventDefault();
+                   $mwo.trigger('pause');
+                });
+                $('.resume').click(function(e){
+                   e.preventDefault();
+                   $mwo.trigger('resume');
+                });
+                //toggle
+                $('.toggle').hover(function(e){
+                   $mwo.trigger('pause');
+                },function(){
+                   $mwo.trigger('resume');
+                })
+                .click(function(e){
+                   e.preventDefault();
+                })
+             });
+    -->   
+    <!-- CSS:
+             small {
+                font-size: 14px;
+             }
+             h1 {
+                margin-bottom: 20px;
+                padding-bottom: 10px;
+                text-align: center;
+             }
+
+             h2 {
+                border-bottom: 1px dotted #ccc;
+                padding-bottom: 5px;
+                margin-bottom: 10px;
+             }
+
+             .marquee, .marquee-with-options {
+               width: 500px;
+               overflow: hidden;
+               border:1px solid #ccc;
+             }
+    -->      
+    <div class="marquee-with-options">
+    {TEXT}
+    </div>
+    [/TEXT]
