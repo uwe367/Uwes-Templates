@@ -1,0 +1,63 @@
+/***********************************************************************************************************************
+DOCUMENT: style/format.css
+DEVELOPED BY: Ryan Stemkoski
+COMPANY: Zipline Interactive
+EMAIL: ryan@gozipline.com
+PHONE: 509-321-2849
+DATE: 2/26/2009
+DESCRIPTION: This document contains the structural formatting files for the accordion style menu.
+************************************************************************************************************************/
+#accordion {
+	width: 100%;
+	max-width: 900px;
+	}
+
+.accordionButton {
+	width: 100%;	
+	max-width: 900px;
+	margin: 10px 0 0 0;
+	padding: 3px 0 3px 30px;
+	float: left;
+	_float: none;  /* Float works in all browsers but IE6 */
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 2px solid #FAB800;
+	font-family: 'Arsenal', sans-serif;
+	font-size: 1.4em;
+	font-weight: 400;
+	color: #000;
+	background: #fff;
+	background-image:url(../accordion/plus.png);
+	background-repeat:no-repeat;
+	background-position: 10px;
+	cursor: pointer;
+	}
+	
+.accordionContent {	
+  width: 100%;
+	margin-bottom: 1px;
+	padding: 10px 10px 10px 10px;
+	float: left;
+	_float: none; /* Float works in all browsers but IE6 */
+	font-family: 'Arsenal', sans-serif;
+	background: #f9f8f8;
+	}
+	
+/***********************************************************************************************************************
+ EXTRA STYLES ADDED FOR MOUSEOVER / ACTIVE EVENTS
+************************************************************************************************************************/
+
+.on {
+	background-image:url(../accordion/minus.png);
+	background-repeat:no-repeat;
+	
+	
+	
+	}
+	
+.over {
+	background-image:url(../accordion/plus.png);
+	background-repeat:no-repeat;
+
+	}

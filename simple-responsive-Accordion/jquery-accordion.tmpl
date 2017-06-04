@@ -1,0 +1,65 @@
+<!--TABS_START//-->
+[TITLE]<h3>{TITLE}</h3>[/TITLE]
+[SUBTITLE]<h4>{SUBTITLE}</h4>[/SUBTITLE]
+[TABS_ENTRIES]
+<div id="accordion">{TABS_ENTRIES}</div>
+<!-- CSS: {TEMPLATE}accordion/accordion.css -->
+<!-- JS: $(document).ready(function() {
+	 
+	//ACCORDION BUTTON ACTION (ON CLICK DO THE FOLLOWING)
+	$('.accordionButton').click(function() {
+
+		//REMOVE THE ON CLASS FROM ALL BUTTONS
+		$('.accordionButton').removeClass('on');
+		  
+		//NO MATTER WHAT WE CLOSE ALL OPEN SLIDES
+	 	$('.accordionContent').hide(700);
+   
+		//IF THE NEXT SLIDE WASN'T OPEN THEN OPEN IT
+		if($(this).next().is(':hidden') == true) {
+			
+			//ADD THE ON CLASS TO THE BUTTON
+			$(this).addClass('on');
+			  
+			//OPEN THE SLIDE
+			$(this).next().show(700);
+		 } 
+		  
+	 });
+	 
+	 	 /*** REMOVE IF MOUSEOVER IS NOT REQUIRED ***/
+   
+   //ADDS THE .OVER CLASS FROM THE STYLESHEET ON MOUSEOVER
+   $('.accordionButton').mouseover(function() {
+      $(this).addClass('over');
+      
+   //ON MOUSEOUT REMOVE THE OVER CLASS
+   }).mouseout(function() {
+      $(this).removeClass('over');                              
+   });
+   
+   /*** END REMOVE IF MOUSEOVER IS NOT REQUIRED ***/
+	  
+	
+	
+	/********************************************************************************************************************
+	CLOSES ALL S ON PAGE LOAD
+	********************************************************************************************************************/	
+	$('.accordionContent').hide();
+
+}); -->
+
+
+[/TABS_ENTRIES]
+<!--TABS_END//-->
+
+<!--TABS_ENTRY_START//-->
+[TABCONTENT]
+	<div class="accordionButton">{TABTITLE}</div>
+	<div class="accordionContent">
+		[TABHEADLINE]<h4>{TABHEADLINE}</h4>[/TABHEADLINE]
+		[TABTEXT]{TABTEXT}[/TABTEXT]
+	</div>
+[/TABCONTENT]
+<div style="clear: left;"></div>
+<!--TABS_ENTRY_END//-->
